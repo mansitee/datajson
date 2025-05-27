@@ -1,0 +1,21 @@
+{
+  "news_search_engines": [
+    { "name": "Kompas", "url": "https://www.kompas.com/search/search/?q=" },
+    { "name": "Detik", "url": "https://search.detik.com/searchnews?query=" },
+    { "name": "Tempo", "url": "https://search.tempo.co/?q=" },
+    { "name": "CNN Indonesia", "url": "https://www.cnnindonesia.com/search?query=" },
+    { "name": "Republika", "url": "https://republika.co.id/search/" },
+    { "name": "Viva", "url": "https://www.viva.co.id/search?q=" },
+    { "name": "Okezone", "url": "https://www.okezone.com/search?q=" },
+    { "name": "Merdeka", "url": "https://www.merdeka.com/cari?q=" },
+    { "name": "TribunNews", "url": "https://www.tribunnews.com/search?q=" },
+    { "name": "Suara", "url": "https://www.suara.com/cari?q=" },
+    { "name": "Antara News", "url": "https://www.antaranews.com/search/" },
+    { "name": "JPNN", "url": "https://www.jpnn.com/indeks?search=" },
+    { "name": "Sindonews", "url": "https://www.sindonews.com/search?q=" },
+    { "name": "BeritaSatu", "url": "https://www.beritasatu.com/search/" },
+    { "name": "iNews", "url": "https://www.inews.id/find?q=" },
+    { "name": "IDN Times", "url": "https://www.idntimes.com/search?keyword=" },
+    { "name": "Media Indonesia", "url": "https://mediaindonesia.com/search?q=" }
+  ]
+}
