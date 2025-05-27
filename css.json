@@ -1,0 +1,16 @@
+{
+  "resources": [
+    { "name": "Uiverse.io", "url": "https://uiverse.io" },
+    { "name": "UI Glass", "url": "https://ui.glass" },
+    { "name": "Web Code Tools", "url": "https://webcode.tools" },
+    { "name": "CSS Portal", "url": "https://cssportal.com" },
+    { "name": "CSS Generator", "url": "https://cssgenerator.org" },
+    { "name": "CSS Gradient", "url": "https://cssgradient.io" },
+    { "name": "CSS Matic", "url": "https://cssmatic.com" },
+    { "name": "CSS Glass", "url": "https://css.glass" },
+    { "name": "Toptal", "url": "https://www.toptal.com" },
+    { "name": "CSS Generator Netlify", "url": "https://css-generator.netlify.app" },
+    { "name": "Neumorphism.io", "url": "https://neumorphism.io" },
+    { "name": "HTML-CSS-JS", "url": "https://html-css-js.com" },
+    { "name": "LayoutIt", "url": "https://layoutit.com" }
+  ]
