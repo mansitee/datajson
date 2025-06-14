@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+    </style>
+    <link rel="manifest" href="data:application/json;base64,eyAibmFtZSI6ICJQV0EgU2VkZXJoYW5hIiwgInNob3J0X25hbWUiOiAiUFdBIiwgInN0YXJ0X3VybCI6ICIuLyIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwgInRoZW1lX2NvbG9yIjogIiMwMDAwMDAiLCAiaWNvbnMiOiBbIHsgInNyYyI6ICJpY29uLnBuZyIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiB9IF0gfQ==">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+            .then(() => console.log("Service Worker terdaftar"))
+            .catch(error => console.log("Service Worker gagal", error));
+        }
+
+        const swScript = `
+        self.addEventListener('install', event => {
+            event.waitUntil(
+                caches.open('pwa-cache').then(cache => {
+                    return cache.addAll(['./']);
+                })
+            );
+        });
+
+        self.addEventListener('fetch', event => {
+            event.respondWith(
+                caches.match(event.request).then(response => {
+                    return response || fetch(event.request);
+                })
+            );
+        });
+        `;
+
+        const swBlob = new Blob([swScript], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(swBlob);
+        navigator.serviceWorker.register(swUrl);
+    </script>
+</head>
+<body>
+    <h1>Selamat Datang di PWA!</h1>
+    <p>Aplikasi web ini bisa diinstal dan bekerja offline.</p>
+</body>
+</html> 
